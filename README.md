@@ -1,6 +1,6 @@
 # 【非公式】Untiy JP Mastodonソース　Read Me
 
-こちらは[【非公式】Untiy JP Mastodon](https://unityjp-mastodon.tokyo/)で使用しているソースコードになります。
+こちらは[【非公式】Untiy JP Mastodon](https://unityjp-mastodon.tokyo/)で使用しているソースコードになります。<br />
 もし、ソースを使用したい場合はunityjpmastodon_v1.6.1ブランチからクローンしてください。
 
 ## 環境
@@ -10,55 +10,44 @@
 
 使用したAWSのサービスは以下の通りです。
 
-・EC2インスタンス　
-
+・EC2インスタンス<br />
 OS：ubuntu16.04<br />
 タイプ：t2.micro
 
-・RDS
-
+・RDS<br />
 エンジン：PostgreSQL<br />
 クラス：db.t2.micro<br />
 ストレージ：20GB
 
-・ElastiChache
-
+・ElastiChache<br />
 タイプ：cache.t2.micro
 
-・VPC
-
-・S3
-
-・CloudWatch
-
+・VPC<br />
+・S3<br />
+・CloudWatch<br />
 ・CloudFront
 
 ※ほぼ全てAWSの無料枠に収まるように設定しています
 
 ### 環境構築にあたり参考させていただいたサイト
 
-[マストドンAWS構築チュートリアル完全版|初心者から大規模運用まで](http://webfood.info/mastodon-aws-tutorial/)
-[AWSのEC2で最小限の努力でmastodonを構築する](https://qiita.com/tsuitta_dayo/items/dfd659ec68435653d16a)
-[AWSの無料SSLを使ってmastodonインスタンスを立てる手順](https://qiita.com/genya0407/items/afb9c3f075225de856ed)
+[マストドンAWS構築チュートリアル完全版|初心者から大規模運用まで](http://webfood.info/mastodon-aws-tutorial/)<br />
+[AWSのEC2で最小限の努力でmastodonを構築する](https://qiita.com/tsuitta_dayo/items/dfd659ec68435653d16a)<br />
+[AWSの無料SSLを使ってmastodonインスタンスを立てる手順](https://qiita.com/genya0407/items/afb9c3f075225de856ed)<br />
 
 ※Mastodonは日々、かなりのスピードで更新しているため、現バージョンで上記のサイトを見ても構築できる保証はありません
 
 ## 本家Mastodonからの変更点 2017/9/24時点
 
-・画像素材
-
-・日本語用のサイト説明文(config/locales/ja.yml)
-
-・サイトタイトル(config/locales/settings.yml)
-
-・スタートページにUnityリンク集追加(app/javascript/mastodon/features/getting_started/index.js)
-
+・画像素材<br />
+・日本語用のサイト説明文(config/locales/ja.yml)<br />
+・サイトタイトル(config/locales/settings.yml)<br />
+・スタートページにUnityリンク集追加(app/javascript/mastodon/features/getting_started/index.js)<br />
 ・docker-compose.yml
 
 ※詳細な変更点を知りたい方は各自diffツール等でご確認ください
 
-以下、セキュリティ面で公開できないファイルになります（.env.production.sampleを複製して、各自で設定してください）
-
+以下、セキュリティ面で公開できないファイルになります（.env.production.sampleを複製して、各自で設定してください）<br />
 ・.env.production
 
 ## 変更履歴
