@@ -1,16 +1,16 @@
 version: '3'
 services:
 
-  db:
-    restart: always
-    image: postgres:alpine
+#  db:
+#    restart: always
+#    image: postgres:alpine
 ### Uncomment to enable DB persistance
 #    volumes:
 #      - ./postgres:/var/lib/postgresql/data
 
-  redis:
-    restart: always
-    image: redis:alpine
+#  redis:
+#    restart: always
+#    image: redis:alpine
 ### Uncomment to enable REDIS persistance
 #    volumes:
 #      - ./redis:/data
@@ -23,9 +23,9 @@ services:
     command: bundle exec rails s -p 3000 -b '0.0.0.0'
     ports:
       - "3000:3000"
-    depends_on:
-      - db
-      - redis
+#    depends_on:
+#      - db
+#      - redis
     volumes:
       - ./public/assets:/mastodon/public/assets
       - ./public/packs:/mastodon/public/packs
@@ -39,9 +39,9 @@ services:
     command: npm run start
     ports:
       - "4000:4000"
-    depends_on:
-      - db
-      - redis
+#    depends_on:
+#      - db
+#      - redis
 
   sidekiq:
     build: .
@@ -49,8 +49,8 @@ services:
     restart: always
     env_file: .env.production
     command: bundle exec sidekiq -q default -q mailers -q pull -q push
-    depends_on:
-      - db
-      - redis
+#    depends_on:
+#      - db
+#      - redis
     volumes:
       - ./public/system:/mastodon/public/system

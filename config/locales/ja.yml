@@ -1,13 +1,13 @@
 ---
 ja:
   about:
-    about_mastodon_html: Mastodon は、オープンなウェブプロトコルを採用した、自由でオープンソースなソーシャルネットワークです。電子メールのような分散型の仕組みを採っています。
+    about_mastodon_html: Unity JP Mastodon は日本のUnity開発者、Unityを勉強中、もしくは興味のある学生、社会人がUnityの技術情報、イベントおよび制作物を共有することを目的とした有志が運営する<em>非公式</em>のMastodonインスタンスです。<br /><br /> Unityに関することであれば自由に使用していただいて構いません。<br /><br />　 個人で運営している上にサーバーの知識がほとんどない初心者が運営しているため、重かったり、対応が遅かったり、予告なく突然クローズすることもあることをご了承ください。<br /><br />使用にあたり以下の行為を禁止し、最悪アカウントを停止します。<br /> ・荒らし等の迷惑行為<br/>・差別的な発言、嫌がらせ等の攻撃的な行為全般<br />・このMastodonインスタンスに関するUnity Technologies及びUnity Technologies Japan合同会社への問い合わせ<br />・その他運営が不適切であると判断した場合
     about_this: 詳細情報
     closed_registrations: 現在このインスタンスでの新規登録は受け付けていません。しかし、他のインスタンスにアカウントを作成しても全く同じネットワークに参加することができます。
     contact: 連絡先
     contact_missing: 未設定
     contact_unavailable: N/A
-    description_headline: "%{domain} とは？"
+    description_headline: "【非公式】Unity JP Mastodonとは？"
     domain_count_after: 個のインスタンス
     domain_count_before: 接続中
     extended_description_html: |
@@ -23,8 +23,8 @@ ja:
       within_reach_body: デベロッパーフレンドリーな API により実現された、iOS や Android、その他様々なプラットフォームのためのアプリでどこでも友人とやりとりできます。
       within_reach_title: いつでも身近に
     find_another_instance: 他のインスタンスを探す
-    generic_description: "%{domain} は、Mastodon インスタンスの一つです。"
-    hosted_on: Mastodon hosted on %{domain}
+    generic_description: "【非公式】Unity JP Mastodonは、Mastodon インスタンスの一つです。"
+    hosted_on: Mastodon hosted on 【非公式】Unity JP Mastodon
     learn_more: もっと詳しく
     other_instances: 他のインスタンス
     source_code: ソースコード
@@ -32,7 +32,7 @@ ja:
     status_count_before: トゥート数
     user_count_after: 人
     user_count_before: ユーザー数
-    what_is_mastodon: Mastodon とは？
+    what_is_mastodon: 【非公式】Unity JP Mastodonとは？
   accounts:
     follow: フォロー
     followers: フォロワー
@@ -50,7 +50,7 @@ ja:
     unfollow: フォロー解除
   admin:
     accounts:
-      are_you_sure: 本当に実行しますか？
+      are_you_sure: 本当に実行しますか?
       confirm: 確認
       confirmed: 確認済み
       disable_two_factor_authentication: 二段階認証を無効にする
@@ -108,18 +108,6 @@ ja:
       unsubscribe: 購読の解除
       username: ユーザー名
       web: Web
-    custom_emojis:
-      created_msg: 絵文字の追加に成功しました
-      delete: 削除
-      destroyed_msg: 絵文字の削除に成功しました
-      emoji: 絵文字
-      image_hint: 50KBまでのPNG画像を利用できます。
-      new:
-        title: 新規カスタム絵文字の追加
-      shortcode: ショートコード
-      shortcode_hint: 2文字以上の半角英数字とアンダーバーのみ利用できます。
-      title: カスタム絵文字
-      upload: アップロード
     domain_blocks:
       add_new: 新規追加
       created_msg: ドメインブロック処理を完了しました
@@ -148,7 +136,7 @@ ja:
         retroactive:
           silence: このドメインからの存在するすべてのアカウントのサイレンスを戻す
           suspend: このドメインからの存在するすべてのアカウントの停止を戻す
-        title: "%{domain}のドメインブロックを戻す"
+        title: "【非公式】Unity JP Mastodonのドメインブロックを戻す"
         undo: 元に戻す
       title: ドメインブロック
       undo: 元に戻す
@@ -191,7 +179,7 @@ ja:
         username: 連絡先のユーザー名
       registrations:
         closed_message:
-          desc_html: 新規登録を停止しているときにフロントページに表示されます。HTMLタグが使えます。
+          desc_html: 新規登録を停止しているときにフロントページに表示されます。HTMLタグが使えます
           title: 新規登録停止時のメッセージ
         deletion:
           desc_html: 誰でも自分のアカウントを削除できるようにします
@@ -203,10 +191,10 @@ ja:
         desc_html: フロントページへの表示と meta タグに使用される紹介文です。HTMLタグ、特に<code>&lt;a&gt;</code> と <code>&lt;em&gt;</code>が使えます。
         title: インスタンスの説明
       site_description_extended:
-        desc_html: あなたのインスタンスにおける行動規範やルール、ガイドライン、そのほかの記述をする際に最適な場所です。HTMLタグが使えます。
+        desc_html: あなたのインスタンスにおける行動規範やルール、ガイドライン、そのほかの記述をする際に最適な場所です。HTMLタグが使えます
         title: カスタム詳細説明
       site_terms:
-        desc_html: あなたは独自のプライバシーポリシーや利用規約、そのほかの法的根拠を書くことができます。HTMLタグが使えます。
+        desc_html: あなたは独自のプライバシーポリシーや利用規約、そのほかの法的根拠を書くことができます。HTMLタグが使えます
         title: カスタム利用規約
       site_title: インスタンスの名前
       thumbnail:
@@ -273,7 +261,7 @@ ja:
     error: 残念ながら、リモートアカウント情報の取得中にエラーが発生しました。
     follow: フォロー
     follow_request: 'あなたは以下のアカウントにフォローリクエストを送信しました:'
-    following: '成功！ あなたは現在以下のアカウントをフォローしています:'
+    following: '成功! あなたは現在以下のアカウントをフォローしています:'
     post_follow:
       close: またはこのウィンドウを閉じます
       return: ユーザーのプロフィールに戻る
@@ -302,7 +290,7 @@ ja:
     warning_html: 削除が保証されるのはこのインスタンス上のコンテンツのみです。他のインスタンス等、外部に広く共有されたコンテンツについては痕跡が残ることがあります。また、現在接続できないサーバーや、あなたの更新を受け取らなくなったサーバーに対しては、削除は反映されません。
     warning_title: 共有されたコンテンツについて
   errors:
-    '403': このページを表示する権限がありません。
+    '403': このページを表示する権限がありません
     '404': お探しのページは見つかりませんでした。
     '410': お探しのページはもう存在しません。
     '422':
@@ -333,11 +321,11 @@ ja:
     powered_by: powered by %{link}
     save_changes: 変更を保存
     validation_errors:
-      one: エラーが発生しました。以下のエラーを確認してください。
-      other: エラーが発生しました。以下の%{count}個のエラーを確認してください。
+      one: エラーが発生しました。以下のエラーを確認してください
+      other: エラーが発生しました。以下の%{count}個のエラーを確認してください
   imports:
     preface: 他のインスタンスでエクスポートされたファイルから、フォロー/ブロックした情報をこのインスタンス上のアカウントにインポートできます。
-    success: ファイルは正常にアップロードされ、現在処理中です。しばらくしてから確認してください。
+    success: ファイルは正常にアップロードされ、現在処理中です。しばらくしてから確認してください
     types:
       blocking: ブロックしたアカウントリスト
       following: フォロー中のアカウントリスト
@@ -366,7 +354,7 @@ ja:
       body: "%{name} さんにフォローされています"
       subject: "%{name} さんにフォローされています"
     follow_request:
-      body: "%{name} さんがあなたにフォローをリクエストしました"
+      body: "%{name} さんがあなたにフォローをリクエストしました。"
       subject: "%{name} さんからのフォローリクエスト"
     mention:
       body: "%{name} さんから返信がありました:"
@@ -449,7 +437,7 @@ ja:
     title: セッション
   settings:
     authorized_apps: 認証済みアプリ
-    back: Mastodon に戻る
+    back: 【非公式】Unity JP Mastodonに戻る
     delete: アカウントの削除
     development: 開発
     edit_profile: プロフィールを編集
@@ -551,13 +539,11 @@ ja:
 
       <p>オリジナルの出典 <a href="https://github.com/discourse/discourse">Discourse privacy policy</a>.</p>
     title: "%{instance} 利用規約・プライバシーポリシー"
-  themes:
-    default: Mastodon
   time:
     formats:
       default: "%Y年%m月%d日 %H:%M"
   two_factor_authentication:
-    code_hint: 確認するには認証アプリで表示されたコードを入力してください。
+    code_hint: 確認するには認証アプリで表示されたコードを入力してください
     description_html: "<strong>二段階認証</strong>を有効にするとログイン時、電話でコードを受け取る必要があります。"
     disable: 無効
     enable: 有効
