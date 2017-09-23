@@ -82,6 +82,15 @@ export default class GettingStarted extends ImmutablePureComponent {
     return (
       <Column icon='asterisk' heading={intl.formatMessage(messages.heading)} hideHeadingOnMobile>
         <div className='getting-started__wrapper'>
+          <ColumnSubheading text="Unityリンク集" />
+          <ColumnLink text="Unity公式サイト" href='https://unity3d.com/jp' />
+          <ColumnLink text="Asset Store" href='https://www.assetstore.unity3d.com/jp/' />
+          <ColumnLink text="ドキュメント" href='https://docs.unity3d.com/ja/current/Manual/index.html' />
+          <ColumnLink text="ブログ" href='https://blogs.unity3d.com/jp/' />
+          <ColumnLink text="フォーラム" href='https://forum.unity.com/' />
+          <ColumnLink text="Answers" href='http://answers.unity3d.com/index.html' />
+          <ColumnLink text="UNITY-CHAN! OFFICIAL WEBSITE" href='http://unity-chan.com/' />
+          <ColumnLink text="unityroom" href='https://unityroom.com/' />
           <ColumnSubheading text={intl.formatMessage(messages.navigation_subheading)} />
           {navItems}
           <ColumnSubheading text={intl.formatMessage(messages.settings_subheading)} />
