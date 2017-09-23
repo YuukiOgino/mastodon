@@ -1,3 +1,108 @@
+# 【非公式】Untiy JP Mastodonソース　Read Me
+
+こちらは[【非公式】Untiy JP Mastodon](https://unityjp-mastodon.tokyo/)で使用しているソースコードになります。<br />
+もし、ソースを使用したい場合はunityjpmastodon_v1.6.1ブランチからクローンしてください。
+
+## 環境
+【非公式】Untiy JP MastodonはAmazon Web Serviceを使用しています。
+
+### AWS設定
+
+使用したAWSのサービスは以下の通りです。
+
+・EC2インスタンス<br />
+OS：ubuntu16.04<br />
+タイプ：t2.micro
+
+・RDS<br />
+エンジン：PostgreSQL<br />
+クラス：db.t2.micro<br />
+ストレージ：20GB
+
+・ElastiChache<br />
+タイプ：cache.t2.micro
+
+・VPC<br />
+・S3<br />
+・CloudWatch<br />
+・CloudFront
+
+※ほぼ全てAWSの無料枠に収まるように設定しています
+
+### 環境構築にあたり参考させていただいたサイト
+
+[マストドンAWS構築チュートリアル完全版|初心者から大規模運用まで](http://webfood.info/mastodon-aws-tutorial/)<br />
+[AWSのEC2で最小限の努力でmastodonを構築する](https://qiita.com/tsuitta_dayo/items/dfd659ec68435653d16a)<br />
+[AWSの無料SSLを使ってmastodonインスタンスを立てる手順](https://qiita.com/genya0407/items/afb9c3f075225de856ed)<br />
+
+※Mastodonは日々、かなりのスピードで更新しているため、現バージョンで上記のサイトを見ても構築できる保証はありません
+
+## 本家Mastodonからの変更点 2017/9/24時点
+
+・画像素材<br />
+・日本語用のサイト説明文(config/locales/ja.yml)<br />
+・サイトタイトル(config/locales/settings.yml)<br />
+・スタートページにUnityリンク集追加(app/javascript/mastodon/features/getting_started/index.js)<br />
+・docker-compose.yml
+
+※詳細な変更点を知りたい方は各自diffツール等でご確認ください
+
+以下、セキュリティ面で公開できないファイルになります（.env.production.sampleを複製して、各自で設定してください）<br />
+・.env.production
+
+## 変更履歴
+
+### v1.3.2 
+
+・2017/05/06
+
+【非公式】Untiy JP Mastodon　一般公開
+
+### v1.3.3
+
+・2017/05/06
+
+バージョンアップデート
+
+### v1.4.1 
+
+・2017/06/15
+
+バージョンアップデート
+
+### v1.4.3 
+
+・2017/06/16
+
+バージョンアップデート
+
+### v1.5.1 
+
+・2017/08/16
+
+バージョンアップデート<br />
+一部画像素材を変更（本家の画像素材が変更されたため）<br />
+スタートページにUnityリンク集追加
+
+・2017/09/12
+
+AWS設定変更<br />
+→アイコン等の素材の通信形式をHTTP1.1からHTTP2.0に切り替え
+
+### v1.6.1 
+
+・2017/09/22
+バージョンアップデート<br/>
+Webプッシュ通知機能追加
+
+## 注意事項
+
+※【非公式】Untiy JP MastodonはMastodonが採用しているAffero General Public License v3.0に基づき、ソースコードを公開しています。<br />
+※【非公式】Untiy JP Mastodonは本家Mastodonと同様、Affero General Public License v3.0ライセンスを継承しています。<br />
+※【非公式】Untiy JP Mastodonは一部画像アセットにユニティちゃんの画像を加工して使用しているため、[ユニティちゃんライセンス](http://unity-chan.com/contents/guideline/)に従って公開しています。
+
+© Unity Technologies Japan/UCL
+
 ![Mastodon](https://i.imgur.com/NhZc40l.png)
 ========
 
