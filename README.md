@@ -1,3 +1,96 @@
+#【非公式】Untiy JP Mastodonソース　Read Me
+
+こちらは[【非公式】Untiy JP Mastodon](https://unityjp-mastodon.tokyo/)で使用しているソースコードになります。
+もし、ソースを使用したい場合はunityjpmastodon_v1.6.1ブランチからクローンしてください。
+
+## 環境
+【非公式】Untiy JP MastodonはAmazon Web Serviceを使用しています。
+
+### AWS設定
+
+使用したAWSのサービスは以下の通りです。
+
+・EC2インスタンス　
+OS：ubuntu16.04
+タイプ：t2.micro
+
+・RDS
+エンジン：PostgreSQL
+クラス：db.t2.micro
+ストレージ：20GB
+
+・ElastiChache
+タイプ：cache.t2.micro
+
+・VPC
+・S3
+・CloudWatch
+・CloudFront
+
+※ほぼ全てAWSの無料枠に収まるように設定しています
+
+### 環境構築にあたり参考させていただいたサイト
+
+[マストドンAWS構築チュートリアル完全版|初心者から大規模運用まで](http://webfood.info/mastodon-aws-tutorial/)
+[AWSのEC2で最小限の努力でmastodonを構築する](https://qiita.com/tsuitta_dayo/items/dfd659ec68435653d16a)
+[AWSの無料SSLを使ってmastodonインスタンスを立てる手順](https://qiita.com/genya0407/items/afb9c3f075225de856ed)
+
+※Mastodonは日々、かなりのスピードで更新しているため、現バージョンで上記のサイトを見ても構築できる保証はありません
+
+## 本家Mastodonからの変更点 2017/9/24時点
+
+・画像素材
+・日本語用のサイト説明文(config/locales/ja.yml)
+・サイトタイトル(config/locales/settings.yml)
+・スタートページにUnityリンク集追加(app/javascript/mastodon/features/getting_started/index.js)
+・docker-compose.yml
+
+※詳細な変更点を知りたい方は各自diffツール等でご確認ください
+
+以下、セキュリティ面で公開できないファイルになります（.env.production.sampleを複製して、各自で設定してください）
+・.env.production
+
+## 変更履歴
+
+### v1.3.2 
+・2017/05/06
+【非公式】Untiy JP Mastodon　一般公開
+
+### v1.3.3
+・2017/05/06
+バージョンアップデート
+
+### v1.4.1 
+・2017/06/15
+バージョンアップデート
+
+### v1.4.3 
+・2017/06/16
+バージョンアップデート
+
+### v1.5.1 
+・2017/08/16
+バージョンアップデート
+一部画像素材を変更（本家の画像素材が変更されたため）
+スタートページにUnityリンク集追加
+
+・2017/09/12
+AWS設定変更
+→アイコン等の素材の通信形式をHTTP1.1からHTTP2.0に切り替え
+
+### v1.6.1 
+・2017/09/22
+バージョンアップデート
+Webプッシュ通知機能追加
+
+## 注意事項
+
+※【非公式】Untiy JP MastodonはMastodonが採用しているAffero General Public License v3.0に基づき、ソースコードを公開しています。
+※【非公式】Untiy JP Mastodonは本家Mastodonと同様、Affero General Public License v3.0ライセンスを継承しています。
+※【非公式】Untiy JP Mastodonは一部画像アセットにユニティちゃんの画像を加工して使用しているため、[ユニティちゃんライセンス](http://unity-chan.com/contents/guideline/)に従って公開しています。
+
+© Unity Technologies Japan/UCL
+
 ![Mastodon](https://i.imgur.com/NhZc40l.png)
 ========
 
