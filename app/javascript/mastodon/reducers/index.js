@@ -21,6 +21,7 @@ import media_attachments from './media_attachments';
 import notifications from './notifications';
 import height_cache from './height_cache';
 import custom_emojis from './custom_emojis';
+import announcements from './announcements';
 
 const reducers = {
   timelines,
@@ -43,6 +44,7 @@ const reducers = {
   search,
   media_attachments,
   notifications,
+  announcements,
   height_cache,
   custom_emojis,
 };

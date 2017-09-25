@@ -16,6 +16,7 @@ defaults: &defaults
   open_registrations: true
   closed_registrations_message: ''
   open_deletion: true
+  admin_announcement: ''
   timeline_preview: true
   default_sensitive: false
   unfollow_modal: false

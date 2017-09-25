@@ -12,6 +12,8 @@ import Motion from 'react-motion/lib/Motion';
 import spring from 'react-motion/lib/spring';
 import SearchResultsContainer from './containers/search_results_container';
 import { changeComposing } from '../../actions/compose';
+import AnnouncementsContainer from './containers/announcements_container';
+import AdminAnnouncementsContainer from './containers/admin_announcements_container';
 
 const messages = defineMessages({
   start: { id: 'getting_started.heading', defaultMessage: 'Getting started' },
@@ -92,8 +94,10 @@ export default class Compose extends React.PureComponent {
 
         <div className='drawer__pager'>
           <div className='drawer__inner' onFocus={this.onFocus}>
+                     <AdminAnnouncementsContainer />
             <NavigationContainer onClose={this.onBlur} />
             <ComposeFormContainer />
+                     <AnnouncementsContainer />
           </div>
 
           <Motion defaultStyle={{ x: -100 }} style={{ x: spring(showSearch ? 0 : -100, { stiffness: 210, damping: 20 }) }}>
